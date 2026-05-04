@@ -6,9 +6,13 @@ A full-featured iOS travel companion app built with SwiftUI, following strict MV
 
 ## Screenshots
 
-| Explore | Seasonal | Budget | Rewards | Profile |
-|---------|----------|--------|---------|---------|
-| Voya logo nav bar, trending stays, seasonal picks, near me | Month selector, destination cards, weather + crowd + pricing | Cost-of-living suggestions, friend stay savings | Points balance, tier progress, redemption store | Instagram-style stats, achievements, trip grid |
+| Explore | Best Time to Go | Squads |
+|---------|----------------|--------|
+| ![Explore](Screenshots/01_explore.png) | ![Seasonal](Screenshots/10_seasonal.png) | ![Squads](Screenshots/04_squads.png) |
+
+| Rewards | Profile | Playbooks |
+|---------|---------|-----------|
+| ![Rewards](Screenshots/08_rewards.png) | ![Profile](Screenshots/09_profile.png) | ![Playbooks](Screenshots/07_playbooks.png) |
 
 ---
 
