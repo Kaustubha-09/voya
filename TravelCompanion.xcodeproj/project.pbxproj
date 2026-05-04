@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* TravelCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001 /* TravelCompanionApp.swift */; };
+		AA000002 /* Stay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002 /* Stay.swift */; };
+		AA000003 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003 /* MockData.swift */; };
+		AA000004 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100004 /* NetworkService.swift */; };
+		AA000005 /* StayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100005 /* StayService.swift */; };
+		AA000006 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100006 /* CacheService.swift */; };
+		AA000007 /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100007 /* ImageCacheService.swift */; };
+		AA000008 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100008 /* HomeViewModel.swift */; };
+		AA000009 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100009 /* DetailViewModel.swift */; };
+		AA000010 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100010 /* HomeView.swift */; };
+		AA000011 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100011 /* DetailView.swift */; };
+		AA000012 /* StayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100012 /* StayCardView.swift */; };
+		AA000013 /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100013 /* AsyncCachedImage.swift */; };
+		AA000014 /* RatingBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* RatingBadge.swift */; };
+		AA000015 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* ErrorView.swift */; };
+		AA000016 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* LoadingView.swift */; };
+		AA000017 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100017 /* SearchBar.swift */; };
+		AA000018 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100018 /* Extensions.swift */; };
+		AA000020 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100020 /* HomeViewModelTests.swift */; };
+		AA000021 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100021 /* FavoritesViewModel.swift */; };
+		AA000022 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100022 /* BookingViewModel.swift */; };
+		AA000023 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100023 /* FavoritesView.swift */; };
+		AA000024 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100024 /* MainTabView.swift */; };
+		AA000025 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100025 /* FilterSheet.swift */; };
+		AA000026 /* BookingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100026 /* BookingSheet.swift */; };
+		AA000027 /* ReviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100027 /* ReviewCard.swift */; };
+		AA000028 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100028 /* Review.swift */; };
+		AA000029 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100029 /* FilterOptions.swift */; };
+		AA000030 /* StayCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100030 /* StayCategory.swift */; };
+		AA000031 /* PriceAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100031 /* PriceAnalysisService.swift */; };
+		AA000032 /* RecentlyViewedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100032 /* RecentlyViewedService.swift */; };
+		AA000033 /* SearchRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100033 /* SearchRankingService.swift */; };
+		AA000034 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100034 /* HapticService.swift */; };
+		AA000035 /* CategoryChipRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100035 /* CategoryChipRow.swift */; };
+		AA000036 /* PriceBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100036 /* PriceBadge.swift */; };
+		AA000037 /* TrendingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100037 /* TrendingSection.swift */; };
+		AA000038 /* RecentlyViewedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100038 /* RecentlyViewedSection.swift */; };
+		AA000039 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100039 /* User.swift */; };
+		AA000040 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100040 /* Booking.swift */; };
+		AA000041 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100041 /* KeychainService.swift */; };
+		AA000042 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100042 /* BiometricService.swift */; };
+		AA000043 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100043 /* SessionManager.swift */; };
+		AA000044 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100044 /* AuthService.swift */; };
+		AA000045 /* BookingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100045 /* BookingStore.swift */; };
+		AA000046 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100046 /* AppStateManager.swift */; };
+		AA000047 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100047 /* AuthViewModel.swift */; };
+		AA000048 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100048 /* ProfileViewModel.swift */; };
+		AA000049 /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100049 /* TripsViewModel.swift */; };
+		AA000050 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100050 /* SplashView.swift */; };
+		AA000051 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100051 /* OnboardingView.swift */; };
+		AA000052 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100052 /* LoginView.swift */; };
+		AA000053 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100053 /* SignUpView.swift */; };
+		AA000054 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100054 /* ForgotPasswordView.swift */; };
+		AA000055 /* BiometricLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100055 /* BiometricLockView.swift */; };
+		AA000056 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100056 /* SocialLoginButton.swift */; };
+		AA000057 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100057 /* ProfileView.swift */; };
+		AA000058 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100058 /* EditProfileView.swift */; };
+		AA000059 /* SecuritySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100059 /* SecuritySettingsView.swift */; };
+		AA000060 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100060 /* NotificationSettingsView.swift */; };
+		AA000061 /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100061 /* PaymentMethodsView.swift */; };
+		AA000062 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100062 /* HelpView.swift */; };
+		AA000063 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100063 /* TripsView.swift */; };
+		AA000064 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100064 /* TripDetailView.swift */; };
+		AA000065 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100065 /* RootView.swift */; };
+		AA000066 /* TravelBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100066 /* TravelBudget.swift */; };
+		AA000067 /* BudgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100067 /* BudgetStore.swift */; };
+		AA000068 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100068 /* BudgetViewModel.swift */; };
+		AA000069 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100069 /* BudgetView.swift */; };
+		AA000070 /* BudgetPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100070 /* BudgetPlannerView.swift */; };
+		AA000071 /* BudgetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100071 /* BudgetDetailView.swift */; };
+		AA000072 /* TravelStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100072 /* TravelStory.swift */; };
+		AA000073 /* StoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100073 /* StoryStore.swift */; };
+		AA000074 /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100074 /* StoriesViewModel.swift */; };
+		AA000075 /* StoriesBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100075 /* StoriesBarView.swift */; };
+		AA000076 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100076 /* StoryDetailView.swift */; };
+		AA000077 /* AddStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100077 /* AddStoryView.swift */; };
+		AA000078 /* Playbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100078 /* Playbook.swift */; };
+		AA000079 /* PlaybookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100079 /* PlaybookStore.swift */; };
+		AA000080 /* PlaybookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100080 /* PlaybookViewModel.swift */; };
+		AA000081 /* PlaybooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100081 /* PlaybooksView.swift */; };
+		AA000082 /* PlaybookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100082 /* PlaybookDetailView.swift */; };
+		AA000083 /* CreatePlaybookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100083 /* CreatePlaybookView.swift */; };
+		AA000084 /* TravelSquad.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100084 /* TravelSquad.swift */; };
+		AA000085 /* SquadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100085 /* SquadStore.swift */; };
+		AA000086 /* SquadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100086 /* SquadViewModel.swift */; };
+		AA000087 /* SquadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100087 /* SquadsView.swift */; };
+		AA000088 /* SquadCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100088 /* SquadCardView.swift */; };
+		AA000089 /* SquadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100089 /* SquadDetailView.swift */; };
+		AA000090 /* CreateSquadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100090 /* CreateSquadView.swift */; };
+		AA000091 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100091 /* AppTheme.swift */; };
+		AA000092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100092 /* Assets.xcassets */; };
+		AA000093 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100093 /* LocationService.swift */; };
+		AA000094 /* CostOfLivingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100094 /* CostOfLivingService.swift */; };
+		AA000095 /* SeasonalRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100095 /* SeasonalRecommendation.swift */; };
+		AA000096 /* SeasonalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100096 /* SeasonalService.swift */; };
+		AA000097 /* SeasonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100097 /* SeasonalView.swift */; };
+		AA000098 /* SeasonalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100098 /* SeasonalDetailView.swift */; };
+		AA000099 /* SeasonalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100099 /* SeasonalCard.swift */; };
+		AA000100 /* TravelPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100100 /* TravelPoints.swift */; };
+		AA000101 /* PointsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100101 /* PointsStore.swift */; };
+		AA000102 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100102 /* PointsView.swift */; };
+		AA000103 /* TierBenefitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100103 /* TierBenefitsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		320C26C12FA185340022A7E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAPROJECT1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA600001;
+			remoteInfo = TravelCompanion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA100001 /* TravelCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCompanionApp.swift; sourceTree = "<group>"; };
+		AA100002 /* Stay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stay.swift; sourceTree = "<group>"; };
+		AA100003 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AA100004 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA100005 /* StayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayService.swift; sourceTree = "<group>"; };
+		AA100006 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		AA100007 /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		AA100008 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AA100009 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		AA100010 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA100011 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AA100012 /* StayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayCardView.swift; sourceTree = "<group>"; };
+		AA100013 /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
+		AA100014 /* RatingBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingBadge.swift; sourceTree = "<group>"; };
+		AA100015 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		AA100016 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AA100017 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AA100018 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA100020 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		AA100021 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		AA100022 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		AA100023 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		AA100024 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AA100025 /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
+		AA100026 /* BookingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingSheet.swift; sourceTree = "<group>"; };
+		AA100027 /* ReviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCard.swift; sourceTree = "<group>"; };
+		AA100028 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		AA100029 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
+		AA100030 /* StayCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayCategory.swift; sourceTree = "<group>"; };
+		AA100031 /* PriceAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAnalysisService.swift; sourceTree = "<group>"; };
+		AA100032 /* RecentlyViewedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyViewedService.swift; sourceTree = "<group>"; };
+		AA100033 /* SearchRankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRankingService.swift; sourceTree = "<group>"; };
+		AA100034 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		AA100035 /* CategoryChipRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChipRow.swift; sourceTree = "<group>"; };
+		AA100036 /* PriceBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceBadge.swift; sourceTree = "<group>"; };
+		AA100037 /* TrendingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingSection.swift; sourceTree = "<group>"; };
+		AA100038 /* RecentlyViewedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyViewedSection.swift; sourceTree = "<group>"; };
+		AA100039 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AA100040 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		AA100041 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		AA100042 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		AA100043 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AA100044 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AA100045 /* BookingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStore.swift; sourceTree = "<group>"; };
+		AA100046 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		AA100047 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AA100048 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AA100049 /* TripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		AA100050 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AA100051 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AA100052 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA100053 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AA100054 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		AA100055 /* BiometricLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricLockView.swift; sourceTree = "<group>"; };
+		AA100056 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		AA100057 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AA100058 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AA100059 /* SecuritySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettingsView.swift; sourceTree = "<group>"; };
+		AA100060 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		AA100061 /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsView.swift; sourceTree = "<group>"; };
+		AA100062 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		AA100063 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		AA100064 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		AA100065 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AA100066 /* TravelBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBudget.swift; sourceTree = "<group>"; };
+		AA100067 /* BudgetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetStore.swift; sourceTree = "<group>"; };
+		AA100068 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		AA100069 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		AA100070 /* BudgetPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetPlannerView.swift; sourceTree = "<group>"; };
+		AA100071 /* BudgetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailView.swift; sourceTree = "<group>"; };
+		AA100072 /* TravelStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelStory.swift; sourceTree = "<group>"; };
+		AA100073 /* StoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryStore.swift; sourceTree = "<group>"; };
+		AA100074 /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
+		AA100075 /* StoriesBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesBarView.swift; sourceTree = "<group>"; };
+		AA100076 /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
+		AA100077 /* AddStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryView.swift; sourceTree = "<group>"; };
+		AA100078 /* Playbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playbook.swift; sourceTree = "<group>"; };
+		AA100079 /* PlaybookStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookStore.swift; sourceTree = "<group>"; };
+		AA100080 /* PlaybookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookViewModel.swift; sourceTree = "<group>"; };
+		AA100081 /* PlaybooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybooksView.swift; sourceTree = "<group>"; };
+		AA100082 /* PlaybookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybookDetailView.swift; sourceTree = "<group>"; };
+		AA100083 /* CreatePlaybookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaybookView.swift; sourceTree = "<group>"; };
+		AA100084 /* TravelSquad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelSquad.swift; sourceTree = "<group>"; };
+		AA100085 /* SquadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadStore.swift; sourceTree = "<group>"; };
+		AA100086 /* SquadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadViewModel.swift; sourceTree = "<group>"; };
+		AA100087 /* SquadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadsView.swift; sourceTree = "<group>"; };
+		AA100088 /* SquadCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadCardView.swift; sourceTree = "<group>"; };
+		AA100089 /* SquadDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadDetailView.swift; sourceTree = "<group>"; };
+		AA100090 /* CreateSquadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSquadView.swift; sourceTree = "<group>"; };
+		AA100091 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		AA100092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA100093 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		AA100094 /* CostOfLivingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostOfLivingService.swift; sourceTree = "<group>"; };
+		AA100095 /* SeasonalRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalRecommendation.swift; sourceTree = "<group>"; };
+		AA100096 /* SeasonalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalService.swift; sourceTree = "<group>"; };
+		AA100097 /* SeasonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalView.swift; sourceTree = "<group>"; };
+		AA100098 /* SeasonalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalDetailView.swift; sourceTree = "<group>"; };
+		AA100099 /* SeasonalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalCard.swift; sourceTree = "<group>"; };
+		AA100100 /* TravelPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPoints.swift; sourceTree = "<group>"; };
+		AA100101 /* PointsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsStore.swift; sourceTree = "<group>"; };
+		AA100102 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		AA100103 /* TierBenefitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierBenefitsView.swift; sourceTree = "<group>"; };
+		AA200001 /* TravelCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA200002 /* TravelCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA300001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA400001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA400002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA500000 = {
+			isa = PBXGroup;
+			children = (
+				AA500001 /* TravelCompanion */,
+				AA500009 /* TravelCompanionTests */,
+				AA500010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA500001 /* TravelCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				AA100001 /* TravelCompanionApp.swift */,
+				AA300001 /* Info.plist */,
+				AA100092 /* Assets.xcassets */,
+				AA500002 /* Models */,
+				AA500003 /* Services */,
+				AA500004 /* ViewModels */,
+				AA500005 /* Views */,
+				AA500008 /* Utils */,
+			);
+			path = TravelCompanion;
+			sourceTree = "<group>";
+		};
+		AA500002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA100002 /* Stay.swift */,
+				AA100003 /* MockData.swift */,
+				AA100028 /* Review.swift */,
+				AA100029 /* FilterOptions.swift */,
+				AA100030 /* StayCategory.swift */,
+				AA100039 /* User.swift */,
+				AA100040 /* Booking.swift */,
+				AA100066 /* TravelBudget.swift */,
+				AA100072 /* TravelStory.swift */,
+				AA100078 /* Playbook.swift */,
+				AA100084 /* TravelSquad.swift */,
+				AA100095 /* SeasonalRecommendation.swift */,
+				AA100100 /* TravelPoints.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA500003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA100004 /* NetworkService.swift */,
+				AA100005 /* StayService.swift */,
+				AA100006 /* CacheService.swift */,
+				AA100007 /* ImageCacheService.swift */,
+				AA100031 /* PriceAnalysisService.swift */,
+				AA100032 /* RecentlyViewedService.swift */,
+				AA100033 /* SearchRankingService.swift */,
+				AA100041 /* KeychainService.swift */,
+				AA100042 /* BiometricService.swift */,
+				AA100043 /* SessionManager.swift */,
+				AA100044 /* AuthService.swift */,
+				AA100045 /* BookingStore.swift */,
+				AA100067 /* BudgetStore.swift */,
+				AA100073 /* StoryStore.swift */,
+				AA100079 /* PlaybookStore.swift */,
+				AA100085 /* SquadStore.swift */,
+				AA100093 /* LocationService.swift */,
+				AA100094 /* CostOfLivingService.swift */,
+				AA100096 /* SeasonalService.swift */,
+				AA100101 /* PointsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA500004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA100008 /* HomeViewModel.swift */,
+				AA100009 /* DetailViewModel.swift */,
+				AA100021 /* FavoritesViewModel.swift */,
+				AA100022 /* BookingViewModel.swift */,
+				AA100046 /* AppStateManager.swift */,
+				AA100047 /* AuthViewModel.swift */,
+				AA100048 /* ProfileViewModel.swift */,
+				AA100049 /* TripsViewModel.swift */,
+				AA100068 /* BudgetViewModel.swift */,
+				AA100074 /* StoriesViewModel.swift */,
+				AA100080 /* PlaybookViewModel.swift */,
+				AA100086 /* SquadViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA500005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA100065 /* RootView.swift */,
+				AA100024 /* MainTabView.swift */,
+				AA100010 /* HomeView.swift */,
+				AA100011 /* DetailView.swift */,
+				AA100023 /* FavoritesView.swift */,
+				AA500006 /* Components */,
+				AA500011 /* Auth */,
+				AA500012 /* Profile */,
+				AA500013 /* Trips */,
+				AA500014 /* Budget */,
+				AA500015 /* Social */,
+				AA500016 /* Playbooks */,
+				AA500017 /* Squads */,
+				AA500018 /* Seasonal */,
+				AA500019 /* Points */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA500006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA100012 /* StayCardView.swift */,
+				AA100013 /* AsyncCachedImage.swift */,
+				AA100014 /* RatingBadge.swift */,
+				AA100015 /* ErrorView.swift */,
+				AA100016 /* LoadingView.swift */,
+				AA100017 /* SearchBar.swift */,
+				AA100025 /* FilterSheet.swift */,
+				AA100026 /* BookingSheet.swift */,
+				AA100027 /* ReviewCard.swift */,
+				AA100035 /* CategoryChipRow.swift */,
+				AA100036 /* PriceBadge.swift */,
+				AA100037 /* TrendingSection.swift */,
+				AA100038 /* RecentlyViewedSection.swift */,
+				AA100056 /* SocialLoginButton.swift */,
+				AA100099 /* SeasonalCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AA500011 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AA100050 /* SplashView.swift */,
+				AA100051 /* OnboardingView.swift */,
+				AA100052 /* LoginView.swift */,
+				AA100053 /* SignUpView.swift */,
+				AA100054 /* ForgotPasswordView.swift */,
+				AA100055 /* BiometricLockView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AA500012 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AA100057 /* ProfileView.swift */,
+				AA100058 /* EditProfileView.swift */,
+				AA100059 /* SecuritySettingsView.swift */,
+				AA100060 /* NotificationSettingsView.swift */,
+				AA100061 /* PaymentMethodsView.swift */,
+				AA100062 /* HelpView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AA500013 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				AA100063 /* TripsView.swift */,
+				AA100064 /* TripDetailView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		AA500014 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				AA100069 /* BudgetView.swift */,
+				AA100070 /* BudgetPlannerView.swift */,
+				AA100071 /* BudgetDetailView.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		AA500015 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				AA100075 /* StoriesBarView.swift */,
+				AA100076 /* StoryDetailView.swift */,
+				AA100077 /* AddStoryView.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		AA500016 /* Playbooks */ = {
+			isa = PBXGroup;
+			children = (
+				AA100081 /* PlaybooksView.swift */,
+				AA100082 /* PlaybookDetailView.swift */,
+				AA100083 /* CreatePlaybookView.swift */,
+			);
+			path = Playbooks;
+			sourceTree = "<group>";
+		};
+		AA500017 /* Squads */ = {
+			isa = PBXGroup;
+			children = (
+				AA100087 /* SquadsView.swift */,
+				AA100088 /* SquadCardView.swift */,
+				AA100089 /* SquadDetailView.swift */,
+				AA100090 /* CreateSquadView.swift */,
+			);
+			path = Squads;
+			sourceTree = "<group>";
+		};
+		AA500018 /* Seasonal */ = {
+			isa = PBXGroup;
+			children = (
+				AA100097 /* SeasonalView.swift */,
+				AA100098 /* SeasonalDetailView.swift */,
+			);
+			path = Seasonal;
+			sourceTree = "<group>";
+		};
+		AA500019 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				AA100102 /* PointsView.swift */,
+				AA100103 /* TierBenefitsView.swift */,
+			);
+			path = Points;
+			sourceTree = "<group>";
+		};
+		AA500008 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA100018 /* Extensions.swift */,
+				AA100034 /* HapticService.swift */,
+				AA100091 /* AppTheme.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AA500009 /* TravelCompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA100020 /* HomeViewModelTests.swift */,
+			);
+			path = TravelCompanionTests;
+			sourceTree = "<group>";
+		};
+		AA500010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA200001 /* TravelCompanion.app */,
+				AA200002 /* TravelCompanionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA600001 /* TravelCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA700001 /* Build configuration list for PBXNativeTarget "TravelCompanion" */;
+			buildPhases = (
+				AA800001 /* Sources */,
+				AA400001 /* Frameworks */,
+				AA800003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelCompanion;
+			productName = TravelCompanion;
+			productReference = AA200001 /* TravelCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA600002 /* TravelCompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA700002 /* Build configuration list for PBXNativeTarget "TravelCompanionTests" */;
+			buildPhases = (
+				AA800002 /* Sources */,
+				AA400002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA900001 /* PBXTargetDependency */,
+			);
+			name = TravelCompanionTests;
+			productName = TravelCompanionTests;
+			productReference = AA200002 /* TravelCompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAPROJECT1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					AA600001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA600002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AA600001;
+					};
+				};
+			};
+			buildConfigurationList = AA700000 /* Build configuration list for PBXProject "TravelCompanion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA500000;
+			productRefGroup = AA500010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA600001 /* TravelCompanion */,
+				AA600002 /* TravelCompanionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA800003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000092 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA800001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* TravelCompanionApp.swift in Sources */,
+				AA000002 /* Stay.swift in Sources */,
+				AA000003 /* MockData.swift in Sources */,
+				AA000028 /* Review.swift in Sources */,
+				AA000029 /* FilterOptions.swift in Sources */,
+				AA000004 /* NetworkService.swift in Sources */,
+				AA000005 /* StayService.swift in Sources */,
+				AA000006 /* CacheService.swift in Sources */,
+				AA000007 /* ImageCacheService.swift in Sources */,
+				AA000008 /* HomeViewModel.swift in Sources */,
+				AA000009 /* DetailViewModel.swift in Sources */,
+				AA000021 /* FavoritesViewModel.swift in Sources */,
+				AA000022 /* BookingViewModel.swift in Sources */,
+				AA000024 /* MainTabView.swift in Sources */,
+				AA000010 /* HomeView.swift in Sources */,
+				AA000011 /* DetailView.swift in Sources */,
+				AA000023 /* FavoritesView.swift in Sources */,
+				AA000012 /* StayCardView.swift in Sources */,
+				AA000013 /* AsyncCachedImage.swift in Sources */,
+				AA000014 /* RatingBadge.swift in Sources */,
+				AA000015 /* ErrorView.swift in Sources */,
+				AA000016 /* LoadingView.swift in Sources */,
+				AA000017 /* SearchBar.swift in Sources */,
+				AA000025 /* FilterSheet.swift in Sources */,
+				AA000026 /* BookingSheet.swift in Sources */,
+				AA000027 /* ReviewCard.swift in Sources */,
+				AA000018 /* Extensions.swift in Sources */,
+				AA000030 /* StayCategory.swift in Sources */,
+				AA000031 /* PriceAnalysisService.swift in Sources */,
+				AA000032 /* RecentlyViewedService.swift in Sources */,
+				AA000033 /* SearchRankingService.swift in Sources */,
+				AA000034 /* HapticService.swift in Sources */,
+				AA000035 /* CategoryChipRow.swift in Sources */,
+				AA000036 /* PriceBadge.swift in Sources */,
+				AA000037 /* TrendingSection.swift in Sources */,
+				AA000038 /* RecentlyViewedSection.swift in Sources */,
+				AA000039 /* User.swift in Sources */,
+				AA000040 /* Booking.swift in Sources */,
+				AA000041 /* KeychainService.swift in Sources */,
+				AA000042 /* BiometricService.swift in Sources */,
+				AA000043 /* SessionManager.swift in Sources */,
+				AA000044 /* AuthService.swift in Sources */,
+				AA000045 /* BookingStore.swift in Sources */,
+				AA000046 /* AppStateManager.swift in Sources */,
+				AA000047 /* AuthViewModel.swift in Sources */,
+				AA000048 /* ProfileViewModel.swift in Sources */,
+				AA000049 /* TripsViewModel.swift in Sources */,
+				AA000050 /* SplashView.swift in Sources */,
+				AA000051 /* OnboardingView.swift in Sources */,
+				AA000052 /* LoginView.swift in Sources */,
+				AA000053 /* SignUpView.swift in Sources */,
+				AA000054 /* ForgotPasswordView.swift in Sources */,
+				AA000055 /* BiometricLockView.swift in Sources */,
+				AA000056 /* SocialLoginButton.swift in Sources */,
+				AA000057 /* ProfileView.swift in Sources */,
+				AA000058 /* EditProfileView.swift in Sources */,
+				AA000059 /* SecuritySettingsView.swift in Sources */,
+				AA000060 /* NotificationSettingsView.swift in Sources */,
+				AA000061 /* PaymentMethodsView.swift in Sources */,
+				AA000062 /* HelpView.swift in Sources */,
+				AA000063 /* TripsView.swift in Sources */,
+				AA000064 /* TripDetailView.swift in Sources */,
+				AA000065 /* RootView.swift in Sources */,
+				AA000066 /* TravelBudget.swift in Sources */,
+				AA000067 /* BudgetStore.swift in Sources */,
+				AA000068 /* BudgetViewModel.swift in Sources */,
+				AA000069 /* BudgetView.swift in Sources */,
+				AA000070 /* BudgetPlannerView.swift in Sources */,
+				AA000071 /* BudgetDetailView.swift in Sources */,
+				AA000072 /* TravelStory.swift in Sources */,
+				AA000073 /* StoryStore.swift in Sources */,
+				AA000074 /* StoriesViewModel.swift in Sources */,
+				AA000075 /* StoriesBarView.swift in Sources */,
+				AA000076 /* StoryDetailView.swift in Sources */,
+				AA000077 /* AddStoryView.swift in Sources */,
+				AA000078 /* Playbook.swift in Sources */,
+				AA000079 /* PlaybookStore.swift in Sources */,
+				AA000080 /* PlaybookViewModel.swift in Sources */,
+				AA000081 /* PlaybooksView.swift in Sources */,
+				AA000082 /* PlaybookDetailView.swift in Sources */,
+				AA000083 /* CreatePlaybookView.swift in Sources */,
+				AA000084 /* TravelSquad.swift in Sources */,
+				AA000085 /* SquadStore.swift in Sources */,
+				AA000086 /* SquadViewModel.swift in Sources */,
+				AA000087 /* SquadsView.swift in Sources */,
+				AA000088 /* SquadCardView.swift in Sources */,
+				AA000089 /* SquadDetailView.swift in Sources */,
+				AA000090 /* CreateSquadView.swift in Sources */,
+				AA000091 /* AppTheme.swift in Sources */,
+				AA000093 /* LocationService.swift in Sources */,
+				AA000094 /* CostOfLivingService.swift in Sources */,
+				AA000095 /* SeasonalRecommendation.swift in Sources */,
+				AA000096 /* SeasonalService.swift in Sources */,
+				AA000097 /* SeasonalView.swift in Sources */,
+				AA000098 /* SeasonalDetailView.swift in Sources */,
+				AA000099 /* SeasonalCard.swift in Sources */,
+				AA000100 /* TravelPoints.swift in Sources */,
+				AA000101 /* PointsStore.swift in Sources */,
+				AA000102 /* PointsView.swift in Sources */,
+				AA000103 /* TierBenefitsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA800002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000020 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA900001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA600001 /* TravelCompanion */;
+			targetProxy = 320C26C12FA185340022A7E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AACFG0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AACFG0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AACFG0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaustubha.TravelCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelCompanion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelCompanion";
+			};
+			name = Debug;
+		};
+		AACFG0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaustubha.TravelCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelCompanion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelCompanion";
+			};
+			name = Release;
+		};
+		AACFG0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelCompanion/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaustubha.TravelCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		AACFG0006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelCompanion/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaustubha.TravelCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA700000 /* Build configuration list for PBXProject "TravelCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFG0001 /* Debug */,
+				AACFG0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA700001 /* Build configuration list for PBXNativeTarget "TravelCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFG0005 /* Debug */,
+				AACFG0006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA700002 /* Build configuration list for PBXNativeTarget "TravelCompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFG0003 /* Debug */,
+				AACFG0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAPROJECT1 /* Project object */;
+}
